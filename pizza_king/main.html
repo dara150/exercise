@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza King</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .wrapper {
+            height: 1000px;
+            width: 1200px;
+            background-color: mediumspringgreen;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        nav {
+            width: 1200px;
+            height: 210px;
+            background-color: #cd4848;
+            color: lightyellow;
+            margin: 0 auto;
+            padding-top: 150px;
+            text-align: right;
+        }
+
+        p#nav-home, p#nav-menu, p#nav-deals, p#nav-about_us, p#nav-contact_us {
+            display: inline;
+            font-size: 34px;
+            font-family: "Gill Sans", sans-serif;
+            padding: 0 25px;
+
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left {
+            position: absolute;
+            height: 260px;
+            left: 28.98px;
+            top: -30px;
+
+        }
+
+        .front_pizza {
+            position: absolute;
+            float:left;
+            top: 235px;
+        }
+
+        .grey_box {
+            position: absolute;
+            height: 530px;
+            width: 400px;
+            background-color: #C4C4C4;
+            top: 235px;
+            left: 1082px;
+        }
+
+        button {
+            position: absolute;
+            background-color: #cd4848;
+            border-radius: 0px;
+            color: white;
+            font-family: "gill sans";
+            width: 195px;
+            height: 60px;
+            left: 1260px;
+            top: 680px;
+            font-size: 28px;
+        }
+
+        .order_text {
+            position: absolute;
+            width: 117px;
+            height: 22px;
+            left: 1181px;
+            top: 569px;
+
+            font-family: "gill sans", sans-serif;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        h2 {
+            position: absolute;
+            font-family: "reem kufi", sans-serif;
+            color: #cd4848;
+            font-style: normal;
+            font-size: 110px;
+            left: 1100px;
+            top: 227px;
+
+
+        }
+
+        p1 {
+            position: absolute;
+            font-family: "reem kufi", sans-serif;
+            color: white;
+            font-size: 42px;
+            font-style: normal;
+            left: 1107px;
+            top: 370px;
+            line-height: 46px;
+        }
+
+        p2 {
+            position: absolute;
+            font-family: "Gill Sans", sans-serif;
+            color: white;
+            font-size: 18px;
+            font-style: italic;
+            left: 1109px;
+            top: 500px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+    <div class="wrapper">
+        <header><a href="main.html"><img src="img/pizzaking_logobottomless.png" alt="Picture of Pizza King Logo"
+                                         class="left"/></a></header>
+
+        <nav>
+            <a href="main.html"><p id="nav-home">Home</p></a>
+            <a href="menu.html"><p id="nav-menu">Menu</p></a>
+            <a href="deals.html"><p id="nav-deals">Deals</p></a>
+            <a href="about_us.html"><p id="nav-about_us">About Us</p></a>
+            <a href="contact_us.html"><p id="nav-contact_us">Contact Us</p></a>
+        </nav>
+
+    </div>
+
+    <div class="order">
+        <a href="deals.html"><img src="img/artesanal-pizza-cheese-close-up-1566837.jpg" alt="Picture of pizza deal"
+                                  class="front_pizza" height="530 px"/></a>
+    </div>
+
+    <div class="grey_box">
+    </div>
+
+    <div class="order_now_box">
+        <a href="deals.html">
+            <button type="button">Order Now</button>
+        </a>
+    </div>
+
+    <div class="order_text">
+    </div>
+    <h2>NEW!</h2>
+    <p1>$1.50 OFF <br> Hand-tossed pizza!</p1>
+    <p2>Only thru June 30, 2019 <br> Not valid with other discounts.</p2>
+</div>
+<!---closing div for wrapper--->
+</body>
+</html>
