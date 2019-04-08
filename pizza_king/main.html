@@ -3,73 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Pizza King</title>
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+
     <style>
-        * {
-            margin: 0;
-            box-sizing: border-box;
-        }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .wrapper {
-            height: 1000px;
-            width: 1200px;
-            background-color: mediumspringgreen;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        nav {
-            width: 1200px;
-            height: 210px;
-            background-color: #cd4848;
-            color: lightyellow;
-            margin: 0 auto;
-            padding-top: 150px;
-            text-align: right;
-        }
-
-        p#nav-home, p#nav-menu, p#nav-deals, p#nav-about_us, p#nav-contact_us {
-            display: inline;
-            font-size: 34px;
-            font-family: "Gill Sans", sans-serif;
-            padding: 0 25px;
-
-        }
-
-        a:link {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:visited {
-            text-decoration: none;
-            color: white;
-        }
-
-        .left {
-            position: absolute;
-            height: 260px;
-            left: 28.98px;
-            top: -30px;
-
-        }
 
         .front_pizza {
-            position: absolute;
-            float:left;
+            float: left;
             top: 235px;
+            margin-top: 17px;
+            margin-bottom: 17px;
         }
 
         .grey_box {
-            position: absolute;
-            height: 530px;
-            width: 400px;
+            position: relative;
+            float: left;
+            width: 350px;
+            height: 500px;
             background-color: #C4C4C4;
-            top: 235px;
-            left: 1082px;
+            padding: 20px;
+            margin-top: 0px;
+            top: -7.7px;
         }
 
         button {
@@ -77,70 +35,78 @@
             background-color: #cd4848;
             border-radius: 0px;
             color: white;
-            font-family: "gill sans";
+            font-family: "gill sans", sans-serif;
             width: 195px;
             height: 60px;
-            left: 1260px;
-            top: 680px;
             font-size: 28px;
-        }
+            float: right;
+            bottom: 20px;
+            right: 20px;
 
-        .order_text {
-            position: absolute;
-            width: 117px;
-            height: 22px;
-            left: 1181px;
-            top: 569px;
-
-            font-family: "gill sans", sans-serif;
-            font-size: 16px;
-            line-height: 25px;
         }
 
         h2 {
-            position: absolute;
+            float: left;
             font-family: "reem kufi", sans-serif;
             color: #cd4848;
             font-style: normal;
-            font-size: 110px;
-            left: 1100px;
-            top: 227px;
-
-
+            font-size: 100px;
         }
 
-        p1 {
-            position: absolute;
+        .p1 {
             font-family: "reem kufi", sans-serif;
             color: white;
             font-size: 42px;
             font-style: normal;
-            left: 1107px;
-            top: 370px;
-            line-height: 46px;
+            line-height: 44px;
         }
 
-        p2 {
-            position: absolute;
+        .p2 {
             font-family: "Gill Sans", sans-serif;
             color: white;
             font-size: 18px;
             font-style: italic;
-            left: 1109px;
-            top: 500px;
-
-
         }
 
+        .container {
+            text-align: center;
+            position: relative;
+            font-family: "reem kufi", sans-serif;
+            color: white;
+            font-size: 27px;
+            font-style: normal;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .option {
+            float: left;
+            width: 32.5%;
+            height: 45px;
+            background-color: #cd4848;
+            padding: 0;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+
+        .option:hover {
+            opacity: 0.89;
+            background-color: darkseagreen;
+        }
+
+        button:hover {
+            opacity: 1;
+            background-color: darkseagreen;;
+        }
 
     </style>
 </head>
 <body>
 <div class="wrapper">
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
-    <div class="wrapper">
-        <header><a href="main.html"><img src="img/pizzaking_logobottomless.png" alt="Picture of Pizza King Logo"
-                                         class="left"/></a></header>
+    <header>
+        <a href="main.html"><img src="img/pizzaking_logobottomless.png" alt="Picture of Pizza King Logo" class="left"/></a>
 
         <nav>
             <a href="main.html"><p id="nav-home">Home</p></a>
@@ -148,30 +114,62 @@
             <a href="deals.html"><p id="nav-deals">Deals</p></a>
             <a href="about_us.html"><p id="nav-about_us">About Us</p></a>
             <a href="contact_us.html"><p id="nav-contact_us">Contact Us</p></a>
+            <div class="topnav">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="info"><p>2929 South Ave <br>La Crosse, WI 54601</p>
+                <p>(608)-788-1926<br>FAX: (608)-788-1975</p></div>
         </nav>
 
-    </div>
+
+    </header>
+
 
     <div class="order">
         <a href="deals.html"><img src="img/artesanal-pizza-cheese-close-up-1566837.jpg" alt="Picture of pizza deal"
-                                  class="front_pizza" height="530 px"/></a>
+                                  class="front_pizza" height="500px" width="850 px"/></a>
     </div>
 
     <div class="grey_box">
-    </div>
 
-    <div class="order_now_box">
-        <a href="deals.html">
-            <button type="button">Order Now</button>
-        </a>
-    </div>
+        <div class="order_text">
+            <h2>NEW!</h2>
+            <p class="p1">$1.50 OFF <br> Hand-tossed pizza!</p>
+            <br>
+            <p class="p2">Only thru June 30, 2019 <br> Not valid with other discounts.</p>
+        </div>
+        <div>
+            <a href="deals.html">
+                <button type="button">Order Now</button>
+            </a>
+        </div>
+    </div><!--closing div for grey box-->
+    <div class="footer">
+        <a href="contact_us.html">Contact Us</a>
+        <a href="#career">Careers</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="about_us.html">About Us</a>
+        <a href="https://www.facebook.com/pages/Pizza-King/109594692411802">Visit our Facebook</a>
+        <i class="fa fa-facebook-official" style="font-size:24px"></i>
 
-    <div class="order_text">
-    </div>
-    <h2>NEW!</h2>
-    <p1>$1.50 OFF <br> Hand-tossed pizza!</p1>
-    <p2>Only thru June 30, 2019 <br> Not valid with other discounts.</p2>
-</div>
-<!---closing div for wrapper--->
+
+    </div><!---closing div for footer------->
+
+
+    <div class="container"><!---start container--->
+        <div class="option">Take Home and Bake<a href="menu.html"><img src="img/take_bake_pizza.jpg"
+                                                                       alt="Picture of take home pizza"
+                                                                       style="width:100%"/></a></div>
+        <div class="option">Hot and Ready<a href="menu.html"><img src="img/pizza_ready.jpg"
+                                                                  alt="Picture of pizza in a box"
+                                                                  style="width:100%"/></a></div>
+        <div class="option">Other Entrees<a href="menu.html"><img src="img/other_entree.jpg"
+                                                                  alt="Picture of other entree" style="width:100%"/></a>
+        </div>
+    </div><!--end container-->
+
+
+
+</div><!---closing div for wrapper--->
 </body>
 </html>

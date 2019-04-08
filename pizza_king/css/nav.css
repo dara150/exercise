@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper {
+    width: 1200px;
+    height: 1600px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+nav {
+    width: 1200px;
+    height: 210px;
+    background-color: #cd4848;
+    color: white;
+    margin: 0 auto;
+    padding-top: 150px;
+
+}
+
+
+p#nav-home, p#nav-menu, p#nav-deals, p#nav-about_us, p#nav-contact_us {
+    display: inline;
+    position: relative;
+    float: left;
+    font-size: 36px;
+    font-family: "Gill Sans", sans-serif;
+    padding: 0 25px;
+    left: 380px;
+
+}
+
+.info {
+    text-align: right;
+    position: relative;
+    float: right;
+    font-family: "gill sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    bottom: 94px;
+    right: 14px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkseagreen;
+}
+
+.left {
+    position: absolute;
+    height: 260px;
+    left: 28.98px;
+    top: -30px;
+}
+
+
+.footer {
+    background-color: #cd4848;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "gill sans", sans-serif;
+    font-size: 17px;
+
+}
+
+.fa {
+    position: relative;
+    float: left;
+    top: 13px;
+    color: white;
+}

@@ -2,9 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Deals</title>
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        /*h1 {*/
+            /*position: relative;*/
+            /*float: left;*/
+            /*font-family: "optima", sans-serif;*/
+            /*font-size: 60px;*/
+            /*color: darkseagreen;*/
+            /*left: 520px;*/
+            /*line-height: 10px;*/
+            /*opacity: 0.65;*/
+        /*}*/
+
+        button {
+            position: relative;
+            background-color: #cd4848;
+            border-radius: 0px;
+            color: white;
+            font-family: "gill sans", sans-serif;
+            width: 195px;
+            height: 60px;
+            font-size: 28px;
+            float: right;
+            margin-left: 13px;
+
+        }
+
+        .coupon_group {
+            position: relative;
+            float: left;
+            /*margin-left: 42px;*/
+            /*margin: 0 auto;*/
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        button:hover {
+            opacity: 1;
+            background-color: darkseagreen;
+        }
+
+        .deal {
+            float: left;
+            position: relative;
+            width: 373px;
+            margin: 0 0 15px 17px;
+
+        }
+
+    </style>
 </head>
 <body>
+<div class="wrapper">
+    <header>
+        <a href="main.html"><img src="img/pizzaking_logobottomless.png" alt="Picture of Pizza King Logo" class="left"/></a>
+
+        <nav>
+            <a href="main.html"><p id="nav-home">Home</p></a>
+            <a href="menu.html"><p id="nav-menu">Menu</p></a>
+            <a href="deals.html"><p id="nav-deals">Deals</p></a>
+            <a href="about_us.html"><p id="nav-about_us">About Us</p></a>
+            <a href="contact_us.html"><p id="nav-contact_us">Contact Us</p></a>
+            <div class="topnav">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="info"><p>2929 South Ave <br>La Crosse, WI 54601</p>
+                <p>(608)-788-1926<br>FAX: (608)-788-1975</p></div>
+        </nav>
+
+    </header>
+
+    <div class="coupons">
+        <!--<h1><b>DEALS</b></h1>-->
+        <div class="coupon_group"><br>
+            <div class="deal"><img src="img/coupon1.jpg"
+                                   alt="Sixteen Inch Thin Crust pizza for $17.49 unbaked or $17.99 baked plus tax"
+                                   style="width:100%"></div>
+            <div class="deal"><img src="img/coupon2.jpg"
+                                   alt="Fourteen Inch Thin Crust pizza for $13.99 unbaked or $14.49 baked plus tax"
+                                   style="width:100%"></div>
+            <div class="deal"><img src="img/coupon3.jpg" alt="Gyros 2 for $8.99 plus tax" style="width:100%"></div>
+        </div><!--- end of coupon_group--->
+    </div><!--------------end of coupons------------>
+
+    <div class="button">
+        <a href="deals.html">
+            <button type="button">Print Coupons</button>
+        </a>
+    </div>
+    <div class="button">
+        <a href="deals.html">
+            <button type="button">Use Online</button>
+        </a>
+    </div><!----end of button---->
+    <div class="footer">
+        <a href="contact_us.html">Contact Us</a>
+        <a href="#career">Careers</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="about_us.html">About Us</a>
+        <a href="https://www.facebook.com/pages/Pizza-King/109594692411802">Visit our Facebook</a>
+        <i class="fa fa-facebook-official" style="font-size:24px"></i>
+
+
+    </div><!---closing div for footer------->
+</div><!---end of wrapper--->
+
+
 
 </body>
 </html>

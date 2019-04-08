@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        .selection {
+            position: relative;
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .option {
+            float: left;
+            position: relative;
+            width: 200px;
+            margin: 0 0 15px 17px;
+            left: 46px;
+            top: 25px;
+            opacity: 1;
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        .option:hover {
+            transform: scale(1.1);
+
+        }
+
+
+
+
+
+    </style>
+
 </head>
 <body>
+<div class="wrapper">
+    <header>
+        <a href="main.html"><img src="img/pizzaking_logobottomless.png" alt="Picture of Pizza King Logo" class="left"/></a>
+
+        <nav>
+            <a href="main.html"><p id="nav-home">Home</p></a>
+            <a href="menu.html"><p id="nav-menu">Menu</p></a>
+            <a href="deals.html"><p id="nav-deals">Deals</p></a>
+            <a href="about_us.html"><p id="nav-about_us">About Us</p></a>
+            <a href="contact_us.html"><p id="nav-contact_us">Contact Us</p></a>
+            <div class="topnav">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="info"><p>2929 South Ave <br>La Crosse, WI 54601</p>
+                <p>(608)-788-1926<br>FAX: (608)-788-1975</p></div>
+        </nav>
+
+    </header>
+
+    <div class="footer">
+        <a href="contact_us.html">Contact Us</a>
+        <a href="#career">Careers</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="about_us.html">About Us</a>
+        <a href="https://www.facebook.com/pages/Pizza-King/109594692411802">Visit our Facebook</a>
+        <i class="fa fa-facebook-official" style="font-size:24px"></i>
+
+
+    </div><!---closing div for footer------->
+
+    <div class="selection">
+        <div class="option"><a href=#pizza><img src="img/pizza.jpg" alt="Link to pizza" style="width: 100%"></a></div>
+        <div class="option"><a href=#subs><img src="img/subs.jpg" alt="Link to sub" style="width: 100%"/></a></div>
+        <div class="option"><a href=#gyros><img src="img/gyros.jpg" alt="Link to gyros" style="width: 100%"/></a></div>
+        <div class="option"><a href=#salad><img src="img/salad.jpg" alt="Link to salad" style="width: 100%"/></a></div>
+        <div class="option"><a href=#appetizer><img src="img/appetizer.jpg" alt="Link to appetizer" style="width: 100%"/></a></div>
+
+    </div>
+     <!----closing for selection---->
+</div><!---- close wrapper--->
+
 
 </body>
 </html>
